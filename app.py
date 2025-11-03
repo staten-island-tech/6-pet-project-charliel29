@@ -7,3 +7,5 @@ class Hero:
     def buy(self, item):
         self.inventory.append(item)
         print(self.inventory)
+Charlie = Hero("Charlie", 100 , ["Ball"])
+Charlie.buy({"title": "Sword", "atk" :34})
