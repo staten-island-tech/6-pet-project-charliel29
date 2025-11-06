@@ -23,7 +23,6 @@ print(Jillian.__dict__)
  """
 
 
-
 class Hero:
     def __init__(self, name, money, inventory):
         self.name = name
@@ -33,5 +32,8 @@ class Hero:
     def buy(self, item):
         self.inventory.append(item)
         print(self.inventory)
+Thomas = Hero("Thomas", 250, ["backpack"])
+Thomas.buy({"title": "gun", "atk": 45})
+print(Thomas.__dict__)
 
  
