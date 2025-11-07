@@ -24,7 +24,7 @@ print(Jillian.__dict__)
 
 
 class Hero:
-    def __init__(self, name, money, inventory):
+    def __init__(self, name, money, inventory,):
         self.name = name
         self.money = money
         self.inventory = inventory
@@ -35,5 +35,6 @@ class Hero:
 Thomas = Hero("Thomas", 250, ["backpack"])
 Thomas.buy({"title": "gun", "atk": 45})
 print(Thomas.__dict__)
+
 
  
