@@ -22,8 +22,7 @@ print(Jillian.__dict__)
         print(f"{self.owner} has ${self.__balance}")
  """
 
-
-class Hero:
+""" class Hero:
     def __init__(self, name, money, inventory,):
         self.name = name
         self.money = money
@@ -34,7 +33,21 @@ class Hero:
         print(self.inventory)
 Thomas = Hero("Thomas", 250, ["backpack"])
 Thomas.buy({"title": "gun", "atk": 45})
-print(Thomas.__dict__)
+print(Thomas.__dict__) """
 
 
- 
+
+""" class Pet:
+      def __init__(self,name,happiness,anger):
+        self.name = name
+        self.happiness = happiness
+        self.anger = anger
+
+      def play (self,fetch,happinessgain):
+          self.fetch = fetch
+          self.happiness += happinessgain
+          print(f"after playing {fetch}, this is your pets happiness: {self.happiness}.")
+Lebron = Pet("Lebron",50,10)
+Lebron.play("fetch",10) """
+          
+
