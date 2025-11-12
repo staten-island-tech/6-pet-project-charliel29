@@ -51,3 +51,14 @@ Lebron = Pet("Lebron",50,10)
 Lebron.play("fetch",10) """
           
 
+class Hero:
+    def __init__(self, name,money, inventory):
+        self.name = name
+        self.__money__ = money 
+        self.inventory = inventory
+    def buy(self, item, cost ):
+        self.inventory.append(item)
+        self.__money__ -= cost
+        print(f"{self.__money__}") 
+Jillian=Hero("Jillian",100,['Potion'])
+Jillian.buy ("sword",50)
