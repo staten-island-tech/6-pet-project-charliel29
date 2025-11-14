@@ -113,8 +113,8 @@ Example:
 
 ```python
 class BankAccount:
-    def __init__(self, owner, balance):
-        self.owner = owner
+    f __init__(self, owner, balance):
+        sedelf.owner = owner
         self.__balance = balance  # double underscore means "private"
 
     def deposit(self, amount):
