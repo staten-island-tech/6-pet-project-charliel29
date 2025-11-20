@@ -37,28 +37,9 @@ print(Thomas.__dict__) """
 
 
 
-""" class Pet:
-      def __init__(self,name,happiness,anger):
-        self.name = name
-        self.happiness = happiness
-        self.anger = anger
 
-      def play (self,fetch,happinessgain):
-          self.fetch = fetch
-          self.happiness += happinessgain
-          print(f"after playing {fetch}, this is your pets happiness: {self.happiness}.")
-Lebron = Pet("Lebron",50,10)
-Lebron.play("fetch",10) """
+def __init__(self, shot power,dribbling,strenth):
+ 
           
 
-class Hero:
-    def __init__(self, name,money, inventory):
-        self.name = name
-        self.__money__ = money 
-        self.inventory = inventory
-    def buy(self, item, cost ):
-        self.inventory.append(item)
-        self.__money__ -= cost
-        print(f"{self.__money__}") 
-Jillian=Hero("Jillian",100,['Potion'])
-Jillian.buy ("sword",50)
+
