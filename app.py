@@ -36,9 +36,34 @@ Thomas.buy({"title": "gun", "atk": 45})
 print(Thomas.__dict__) """
 
 
+class Pet:
+    def __init__(self,name):
+        self.name = name
+    def play(self,happiness):
+        happiness = input("How much happiness does your pet have from 1-10?")
+        if not happiness .isdigit():
+            print("Your happiness must be a number.")
+        happiness=int(happiness)
+        happiness >= 10 or happiness > 1
+        print("Your number must be 1-10")
+    def hunger(self,hunger):
+        hunger = input("How hungry is your pet from 1-10?")
+        if not hunger .isdigit():
+            print("Your hunger must be a number")
+        hunger=int(hunger)
+        hunger <=10 or hunger > 0
+        print("You number must be 1-10")
+    def tiredness(self,tiredness):
+        tiredness = input("How tired is your pet from 1-10?")
+        if not tiredness .isdigit():
+            print("Your tiredness must be a number")
+        tiredness=int(tiredness)
+        tiredness <=10 or tiredness > 0
+        print("Your number must be 1-10")
 
 
-def __init__(self, shot power,dribbling,strenth):
+Lebron=Pet("Lebronnnnn")
+Lebron.play(6)
  
           
 
