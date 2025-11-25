@@ -44,26 +44,23 @@ class Pet:
         if not happiness .isdigit():
             print("Your happiness must be a number.")
         happiness=int(happiness)
-        happiness >= 10 or happiness > 1
-        print("Your number must be 1-10")
+        if happiness <= 10 and happiness >= 1:
+            input("What game would you like to play?")
+        else: 
+            print("number has to be 1-10")
+        def __init__(self,fetch,catch,toys):
+            self.fetch = fetch
+            self.catch = catch
+            self.toys = toys  
     def hunger(self,hunger):
         hunger = input("How hungry is your pet from 1-10?")
         if not hunger .isdigit():
             print("Your hunger must be a number")
         hunger=int(hunger)
-        hunger <=10 or hunger > 0
+        hunger <=10 or hunger >= 1
         print("You number must be 1-10")
-    def tiredness(self,tiredness):
-        tiredness = input("How tired is your pet from 1-10?")
-        if not tiredness .isdigit():
-            print("Your tiredness must be a number")
-        tiredness=int(tiredness)
-        tiredness <=10 or tiredness > 0
-        print("Your number must be 1-10")
-
-
 Lebron=Pet("Lebronnnnn")
-Lebron.play(6)
+
  
           
 
