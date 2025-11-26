@@ -37,29 +37,31 @@ print(Thomas.__dict__) """
 
 
 class Pet:
-    def __init__(self,name):
+    def __init__(self,name,happiness,tiredness,hunger,cleansiness):
         self.name = name
-    def play(self,happiness):
-        happiness = input("How much happiness does your pet have from 1-10?")
-        if not happiness .isdigit():
-            print("Your happiness must be a number.")
-        happiness=int(happiness)
-        if happiness <= 10 and happiness >= 1:
-            input("What game would you like to play?")
-        else: 
-            print("number has to be 1-10")
-        def __init__(self,fetch,catch,toys):
-            self.fetch = fetch
-            self.catch = catch
-            self.toys = toys  
-    def hunger(self,hunger):
-        hunger = input("How hungry is your pet from 1-10?")
-        if not hunger .isdigit():
-            print("Your hunger must be a number")
-        hunger=int(hunger)
-        hunger <=10 or hunger >= 1
-        print("You number must be 1-10")
-Lebron=Pet("Lebronnnnn")
+        self.happiness = happiness
+        self.tiredness = tiredness
+        self.hunger = hunger
+        self.cleansiness = cleansiness
+
+    print("1) Play with your pet")
+    print("2) Feed you pet")
+    print("3) Clean your pet")
+    print("4) Rest your pet")
+    print("5) ignore your pet")
+    y = input("What would you like to do?")
+
+    if y == "1":
+        print("1) Fetch")
+        print("2) Catch")
+        print("3) tug of war")
+    x = input("What game would you like to play? 1,2,3")
+    if x == "1":
+        print("after playing fetch your pet gains 3 happiness")
+    
+
+    
+
 
  
           
