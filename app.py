@@ -37,12 +37,12 @@ print(Thomas.__dict__) """
 
 
 class Pet:
-    def __init__(self,name,happiness,tiredness,hunger,cleansiness):
+    def __init__(self,name):
         self.name = name
-        self.happiness = happiness
-        self.tiredness = tiredness
-        self.hunger = hunger
-        self.cleansiness = cleansiness
+        self.happiness = 5
+        self.tiredness = 5
+        self.hunger = 5
+        self.cleansiness = 5
 
     print("1) Play with your pet")
     print("2) Feed you pet")
@@ -50,15 +50,53 @@ class Pet:
     print("4) Rest your pet")
     print("5) ignore your pet")
     y = input("What would you like to do?")
+    x = input("what game would you like to play with your pet")
+    print("1) Fetch")
+    print("2)Tug of war")
+    print("3)catch")
+    def play(self,game):
+        if game == "1":
+          self.happiness += 3
+          self.tiredness += 2
+          print(f"{self.name} played fetch! Happiness +3, Tiredness +2")
+        elif game == "2":
+            self.happiness += 3
+            self.tiredness += 2
+            print(f"{self.name} Played Catch Happiness +3, Tiredness +2")
+        elif game == "3":
+            self.happiness += 3
+            self.tiredness += 2
+            print(f"{self.name} Played catch")
 
-    if y == "1":
-        print("1) Fetch")
-        print("2) Catch")
-        print("3) tug of war")
-    x = input("What game would you like to play? 1,2,3")
-    if x == "1":
-        print("after playing fetch your pet gains 3 happiness")
     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
