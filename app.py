@@ -44,32 +44,44 @@ class Pet:
         self.hunger = 5
         self.cleansiness = 5
 
-    print("1) Play with your pet")
-    print("2) Feed you pet")
-    print("3) Clean your pet")
-    print("4) Rest your pet")
-    print("5) ignore your pet")
-    y = input("What would you like to do?")
-    x = input("what game would you like to play with your pet")
-    print("1) Fetch")
-    print("2)Tug of war")
-    print("3)catch")
-    def play(self,game):
-        if game == "1":
-          self.happiness += 3
-          self.tiredness += 2
-          print(f"{self.name} played fetch! Happiness +3, Tiredness +2")
-        elif game == "2":
-            self.happiness += 3
-            self.tiredness += 2
-            print(f"{self.name} Played Catch Happiness +3, Tiredness +2")
-        elif game == "3":
-            self.happiness += 3
-            self.tiredness += 2
-            print(f"{self.name} Played catch")
+pet_name = input("What is your pet's name? ")
+my_pet = Pet(pet_name)
+print("1) Play with your pet")
+print("2) Feed you pet")
+print("3) Clean your pet")
+print("4) Rest your pet")
+print("5) ignore your pet")
+y = input("What would you like to do?")
+print("1) Fetch")
+print("2)Tug of war")
+print("3)catch")
+x = input("what game would you like to play with your pet")
+
+def play(self,game):
+    if game == "1":
+        self.happiness += 3
+        self.tiredness += 2
+        print(f"{self.name} played fetch! Gained 3 Happiness, lost 2 Tiredness")
+    elif game == "2":
+        self.happiness += 3
+        self.tiredness += 2
+        print(f"{self.name} Played Catch! Gained 3 Happiness, lost 2 Tiredness")
+    elif game == "3":
+        self.happiness += 3
+        self.tiredness += 2
+        print(f"{self.name} Played tug or war! Gained 3 Happines, lost 2 Tiredness")
+
+def feed(self):
+    self.hunger -= 3
+    if self.hunger < 0 :
+        self.hunger
+
+
 
     
     
+
+
 
 
 
