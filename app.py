@@ -42,7 +42,7 @@ class Pet:
         self.happiness = 5
         self.tiredness = 5
         self.hunger = 5
-        self.cleansiness = 5
+        self.cleanliness = 5
 
     def play(self):
         valid = True
@@ -54,18 +54,24 @@ class Pet:
             if game == "1":
                 self.happiness += 3
                 valid = False
+                if self.happiness<0:
+                    self.happiness=0
                 print(f"{self.name} played fetch! Gained 3 Happiness")
             elif game == "2":
                 self.happiness += 3
                 valid = False
+                if self.happiness<0:
+                    self.happiness=0
                 print(f"{self.name} Played tug of war! Gained 3 Happiness")
             elif game == "3":
                 self.happiness += 3
                 valid = False
+                if self.happiness<0:
+                    self.happiness=0
                 print(f"{self.name} Played catch! Gained 3 Happines")
             else:
                 print("You must choose a option 1,2,or 3")
-        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleansiness} ")
+        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleanliness} ")
         
     def feed(self):
         valid = True
@@ -94,7 +100,7 @@ class Pet:
                 print(f"after drinking water {self.name} lost 1 hunger")
             else:
                 print("You must choose a option 1,2, or 3")
-        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleansiness} ")
+        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleanliness} ")
 
     def clean(self):
         valid = True
@@ -103,20 +109,20 @@ class Pet:
         while valid == True:
             clean = input("How would you like to clean your pet?")
             if clean == "1":
-                self.cleansiness +=3
+                self.cleanliness +=3
                 valid = False
-                if self.cleansiness<0:
-                    self.cleansiness=0
-                print(f"after washing {self.name} lost 3 cleansiness")
+                if self.cleanliness<0:
+                    self.cleanliness=0
+                print(f"after washing {self.name} gained 3 cleansiness")
             elif clean == "2":
-                self.cleansiness +=2
+                self.cleanliness +=2
                 valid = False
-                if self.cleansiness<0:
-                    self.cleansiness=0
-                print(f"after brushing {self.name} lost 2 cleansiness")
+                if self.cleanliness<0:
+                    self.cleanliness=0
+                print(f"after brushing {self.name} gained 2 cleansiness")
             else:
                 print("You must choose 1 or 2")
-        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleansiness} ")
+        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleanliness} ")
 
     def rest(self):
         valid = True
@@ -138,16 +144,20 @@ class Pet:
                 print(f"after napping {self.name} lost 2 happiness")
             else:
                 print("You must choose 1 or 2")
-        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleansiness} ")
+        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleanliness} ")
 
 
     def ignore(self):
         self.happiness -= 3
         self.tiredness += 3
         self.hunger += 3
-        self.cleansiness -= 3
+        self.cleanliness -= 3
+        if self.happiness<0:
+            self.happiness=0
+        if self.cleanliness<0:
+            self.cleanliness=0
         print(f"after ignoring {self.name} he lost 3 happiness, gained 3 tiredness, gained 3 hunger, lost 3 cleansiness")
-        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleansiness} ")
+        print (f"Happiness: {self.happiness}  Tiredness: {self.tiredness} Hunger: {self.hunger} Cleansiness: {self.cleanliness} ")
             
 
 
